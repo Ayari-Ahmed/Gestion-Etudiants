@@ -1,0 +1,70 @@
+.page-404-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .content {
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .logo-container {
+    font-size: 70px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+  }
+  
+  .logo-icon {
+    font-size: 80px;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo-icon:hover {
+    transform: translateY(-5px);
+  }
+  
+  .error-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .error-message {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .go-home-btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+  }
+  
+  .go-home-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .go-home-btn:active {
+    background-color: #388e3c;
+    transform: translateY(0);
+  }
+  

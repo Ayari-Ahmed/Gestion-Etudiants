@@ -79,3 +79,20 @@
     }
   }
   
+
+  .error-message {
+    color: red;
+    font-size: 12px;
+  }
+  .success-message {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  
+  
