@@ -1,8 +1,45 @@
-<h2>Liste des Étudiants</h2>
-<ul>
-<li *ngFor="let student of students; let i = index">
-<a [routerLink]="['/students', i]">{{ student.name }}</a>
-</li>
-</ul>
-<app-student-detail></app-student-detail>
-<app-add-student></app-add-student>
+<h2 class="page-title">Liste des Étudiants</h2>
+
+<!-- Main Container for Side-by-Side Layout -->
+<div class="main-container">
+  <!-- Student List Section (Left) -->
+  <div class="student-list-container">
+    <!-- Search and Filter Section -->
+    <div class="search-container">
+      <input 
+        type="text" 
+        [(ngModel)]="searchQuery" 
+        (input)="filterStudents()" 
+        placeholder="Rechercher un étudiant..."
+        class="search-input" 
+      />
+      <button (click)="sortStudents()" class="sort-btn">Trier par Nom</button>
+    </div>
+
+    <!-- Student List Count -->
+    <p class="student-count">Nombre d'étudiants: {{ filteredStudents.length }}</p>
+
+    <!-- Student List -->
+    <ul class="student-list">
+      <li *ngFor="let student of filteredStudents; let i = index" class="student-item">
+        <a [routerLink]="['/students', i]" class="student-link">
+          <div class="student-item-content">
+            <img [src]="student.profilePicture" alt="Profile picture of {{ student.name }}" class="student-profile-img" />
+            <div class="student-info">
+              <h3 class="student-name">{{ student.name }}</h3>
+              <p class="student-class">Classe: {{ student.class }}</p>
+              <p class="student-age">Âge: {{ student.age }}</p>
+              <p class="student-email">Email: {{ student.email }}</p>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Add Student Form Section (Right) -->
+  <div class="add-student-container">
+    <app-add-student></app-add-student>
+  </div>
+  <br/>
+</div>

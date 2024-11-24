@@ -1,4 +1,8 @@
-<button (click)="previousStudent()" [disabled]="currentId <= 0">
-  Précédent
-</button>
-<button (click)="nextStudent()" [disabled]="currentId >= maxId">Suivant</button>
+<!-- Navigation buttons for previous and next students -->
+<button class="nav-btn" (click)="previousStudent()" [disabled]="currentId <= 0">
+    Précédent
+  </button>
+  <button class="nav-btn" (click)="nextStudent()" [disabled]="currentId >= maxId">
+    Suivant
+  </button>
+  

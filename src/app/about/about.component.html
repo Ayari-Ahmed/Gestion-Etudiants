@@ -1,1 +1,60 @@
-<p>about works!</p>
+<div class="about-us-container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1 class="hero-title">Welcome to Our Vision</h1>
+      <p class="hero-description">Innovation, Integrity, and Excellence – the values we live by.</p>
+      <button class="cta-button">Discover More</button>
+    </section>
+  
+    <!-- Mission Section -->
+    <section class="mission">
+      <div class="section-title">
+        <h2>Our Mission</h2>
+        <p>We focus on building solutions that empower businesses and individuals, using the latest technologies and a customer-first mindset.</p>
+      </div>
+    </section>
+  
+    <!-- Team Section -->
+    <section class="team">
+      <div class="section-title">
+        <h2>Meet Our Team</h2>
+      </div>
+      <div class="team-cards">
+        <div class="team-card" *ngFor="let member of teamMembers">
+          <div class="team-member-image">
+            <img [src]="member.img" alt="Team Member">
+          </div>
+          <div class="team-member-info">
+            <h3>{{ member.name }}</h3>
+            <p>{{ member.role }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Values Section -->
+    <section class="values">
+      <div class="section-title">
+        <h2>Our Core Values</h2>
+      </div>
+      <div class="values-list">
+        <div class="value-item" *ngFor="let value of coreValues">
+          <div class="value-icon">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3>{{ value.title }}</h3>
+          <p>{{ value.description }}</p>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Contact Section -->
+    <section class="contact">
+      <div class="section-title">
+        <h2>Get in Touch</h2>
+        <p>We would love to hear from you! Let's create something amazing together.</p>
+        <button class="cta-button">Contact Us</button>
+      </div>
+    </section>
+  </div>
+  

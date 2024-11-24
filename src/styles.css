@@ -1,1 +1,398 @@
-/* You can add global styles to this file, and also import other style files */
+/* Main Nav Bar Styling */
+.classic-nav {
+    background-color: #2c3e50; /* Deep charcoal color for a classic, professional vibe */
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px; /* Spacing between links */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Soft shadow for subtle depth */
+    border-radius: 50px; /* Smooth rounded corners for elegance */
+    transition: all 0.3s ease-in-out;
+    position: relative; /* Ensure it stays in place initially */
+    z-index: 1000; /* Keep it above other content */
+}
+
+/* Sticky Header when Scrolled */
+.classic-nav.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 40px;
+    background-color: #34495e; /* Change background color when sticky */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Darker shadow for depth */
+    border-radius: 0; /* Remove rounded corners when sticky */
+}
+
+/* Styling links */
+.classic-nav a {
+    text-decoration: none;
+    color: #ecf0f1; /* Soft off-white for a luxurious feel */
+    font-size: 18px; /* Moderate font size for a refined look */
+    font-family: 'Georgia', serif; /* Classic serif font */
+    font-weight: 500; /* Slightly bold to stand out without being too heavy */
+    padding: 12px 25px; /* Padding for clickable area */
+    text-transform: uppercase; /* Uppercase text for a formal look */
+    letter-spacing: 1px; /* Letter spacing for readability */
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effects */
+.classic-nav a:hover {
+    background-color: #34495e; /* Muted greenish-gray for the hover effect */
+    color: #fff; /* White text on hover */
+    transform: translateY(-3px); /* Subtle lift effect */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Soft shadow on hover */
+    cursor: pointer;
+}
+
+/* Fancy Underline on Hover (Old Money Style) */
+.classic-nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #16a085; /* Classic jade green for the underline */
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.classic-nav a:hover::after {
+    transform: scaleX(1); /* Underline expands on hover */
+}
+
+/* Active Link Styling */
+.classic-nav a.router-link-active {
+    background-color: #16a085; /* Subtle jade green for active state */
+    color: #fff; /* White text on active link */
+    font-weight: 700; /* Bold text for the active link */
+}
+
+/* Box shadow effect on the navigation */
+.classic-nav {
+    transition: box-shadow 0.3s ease;
+}
+
+.classic-nav:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4); /* More prominent shadow when hovered */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .classic-nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .classic-nav a {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .footer-left,
+      .footer-center,
+      .footer-right {
+        flex: 1 1 100%;
+        margin: 10px 0;
+      }
+    
+      .footer-left p,
+      .footer-center p,
+      .footer-right p {
+        font-size: 14px; /* Slightly smaller text on mobile */
+      }
+    
+      .footer-right p {
+        font-size: 12px; /* Smaller text for privacy terms */
+      }
+}
+/* Footer Styling */
+.classic-footer {
+    background-color: #34495e; /* Slightly lighter gray for footer contrast */
+    padding: 40px 0;
+    color: #ecf0f1; /* Light gray text for readability */
+    font-family: 'Georgia', serif; /* Classic serif font */
+    font-weight: 400;
+    box-shadow: 0 -10px 25px rgba(0, 0, 0, 0.15); /* Elegant shadow for separation */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Container to align the footer sections */
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Left Footer Section */
+  .footer-left p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ecf0f1; /* Subtle off-white text */
+  }
+  
+  /* Center Footer Section */
+  .footer-center p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #bdc3c7; /* Lighter gray for the center section */
+    text-align: center;
+  }
+  
+  /* Right Footer Section (for legal links) */
+  .footer-right p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #bdc3c7; /* Light gray text */
+    text-align: right;
+  }
+  
+  /* Add hover effect to footer links */
+  .footer-right p a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-right p a:hover {
+    color: #16a085; /* Elegant jade green on hover */
+  }
+  
+  /* Sticky Footer (keeps it at the bottom of the page) */
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+  }
+  
+  footer {
+    margin-top: auto; /* Push footer to the bottom if content is short */
+  }
+
+
+
+
+  /* Home Page Container */
+.home-container {
+    font-family: 'Arial', sans-serif;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Hero Section Styling */
+  .hero-section {
+    background-color: #3498db; /* Sky blue for a welcoming feel */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    background-color: #16a085; /* Elegant teal */
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #1abc9c;
+  }
+  
+  /* Icon Section */
+  .icon-section {
+    background-color: #ecf0f1;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .icon-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .icon-item {
+    flex: 1 1 200px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .icon-item i {
+    font-size: 3rem;
+    color: #3498db;
+    margin-bottom: 10px;
+  }
+  
+  .icon-item p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  
+  /* Slider Section */
+  .slider-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .slider-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #2c3e50;
+  }
+  
+  .slider {
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+  }
+  
+  .slider-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 600px;
+    text-align: center;
+  }
+  
+  .slider-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ecf0f1;
+  }
+  
+  .slider-item p {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    color: #2c3e50;
+    font-weight: 500;
+  }
+  
+  .slider::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .hero-section {
+      padding: 40px 10px;
+    }
+  
+    .cta-button {
+      padding: 10px 25px;
+      font-size: 0.9rem;
+    }
+  
+    .icon-container {
+      flex-direction: column;
+    }
+  
+    .icon-item {
+      flex: 1 1 100%;
+      margin: 15px 0;
+    }
+  
+    .slider {
+      flex-direction: column;
+    }
+  
+    .slider-item {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Reviews Section */
+.reviews-section {
+    background-color: #fafafa;
+    padding: 60px 0;
+}
+
+.reviews-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #007bff;
+}
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.review-item {
+    background-color: white;
+    padding: 30px;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+/* Hover Effect for Reviews */
+.review-item:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+}
+
+/* Featured Updates Section (Similar Hover Effect) */
+.slider-item {
+    background-color: #f7f7f7;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+    margin-bottom: 20px;
+}
+
+/* Hover Effect for Featured Updates */
+.slider-item:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+}
+
+
+
+
+

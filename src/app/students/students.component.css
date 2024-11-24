@@ -1,0 +1,182 @@
+/* Main Container for Side-by-Side Layout */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Space between the student list and form */
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+  
+  /* Page Title */
+  .page-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: #3498db;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  /* Search and Filter Section */
+  .search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  .search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-input:focus {
+    border-color: #2980b9;
+    outline: none;
+  }
+  
+  .sort-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sort-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Student List Count */
+  .student-count {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #3498db;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #ecf6ff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .student-count:hover {
+    background-color: #d3e8f7;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Student List Container */
+  .student-list-container {
+    width: 55%; /* Left section width */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .student-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .student-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .student-item:hover {
+    transform: scale(1.02);
+  }
+  
+  .student-link {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+  }
+  
+  .student-item-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .student-profile-img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  
+  .student-info {
+    flex-grow: 1;
+  }
+  
+  .student-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .student-class,
+  .student-age,
+  .student-email {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Add Student Form Container */
+  .add-student-container {
+    margin-right: 30px;
+    width: 40%; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 30px;
+  }
+  
+  /* Responsive Design: Stack elements on smaller screens */
+  @media (max-width: 768px) {
+    .main-container {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .student-list-container,
+    .add-student-container {
+      width: 100%;
+    }
+  
+    /* Adjust input size for mobile screens */
+    .search-input {
+      width: 100%;
+      max-width: none;
+    }
+  }
+  

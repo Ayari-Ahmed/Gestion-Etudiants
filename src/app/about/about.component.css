@@ -1,0 +1,190 @@
+/* Reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+  }
+  
+  .about-us-container {
+    width: 100%;
+    padding: 40px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('https://source.unsplash.com/1600x900/?nature,technology') center/cover;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hero-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero-description {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    background-color: #16a085;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #1abc9c;
+  }
+  
+  /* Mission Section */
+  .mission {
+    padding: 60px 20px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  .mission .section-title p {
+  color: #438477;
+  }
+  .mission .section-title  {
+      
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .mission p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+  
+  /* Team Section */
+  .team {
+    padding: 60px 20px;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  
+  .team .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .team-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .team-card {
+    background-color: #f4f6f8;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    width: 250px;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .team-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-member-image img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-member-info h3 {
+    margin-top: 10px;
+    font-size: 1.3rem;
+  }
+  
+  .team-member-info p {
+    color: #7f8c8d;
+    font-size: 1rem;
+  }
+  
+  /* Values Section */
+  .values {
+    padding: 60px 20px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .values .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .values-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .value-item {
+    width: 250px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .value-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .value-icon {
+    font-size: 3rem;
+    color: #16a085;
+    margin-bottom: 15px;
+  }
+  
+  /* Contact Section */
+  .contact {
+    padding: 60px 20px;
+    background-color: #16a085;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  
+  .contact .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  

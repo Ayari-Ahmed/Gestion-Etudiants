@@ -1,0 +1,43 @@
+/* Common styling for the navigation buttons */
+.nav-btn {
+    background-color: #3498db; /* Blue background */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    margin: 0 10px; /* Adds spacing between buttons */
+    display: inline-block;
+    text-align: center;
+    min-width: 120px; /* Ensures buttons have a minimum width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+  }
+  
+  /* Hover effect for navigation buttons */
+  .nav-btn:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight scaling on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+  }
+  
+  /* Disabled button styling */
+  .nav-btn:disabled {
+    background-color: #bdc3c7; /* Light grey background for disabled state */
+    color: #7f8c8d; /* Darker text for disabled state */
+    cursor: not-allowed; /* Change cursor to indicate the button is disabled */
+    box-shadow: none; /* Remove shadow for disabled state */
+    transform: none; /* No scaling on hover for disabled state */
+  }
+  
+  /* Additional responsive styling */
+  @media (max-width: 768px) {
+    .nav-btn {
+      font-size: 1rem; /* Adjust font size for smaller screens */
+      padding: 10px 18px; /* Adjust padding */
+      min-width: 100px; /* Make the buttons more compact */
+    }
+  }
+  

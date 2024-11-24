@@ -1,7 +1,48 @@
-<div *ngIf="student">
-  <h3>{{ student.name }}</h3>
-  <p>Age: {{ student.age }}</p>
-  <p>Classe: {{ student.class }}</p>
-  <button (click)="deleteStudent()">Supprimer</button>
-  <app-student-navigator></app-student-navigator>
-</div>
+
+<div *ngIf="student" class="student-card">
+    <!-- Profile Section -->
+    <div class="profile-section">
+      <div class="profile-img-wrapper">
+        <img [src]="student.profilePicture" alt="{{ student.name }}'s Profile Picture" class="student-profile-img">
+      </div>
+      <div class="profile-info">
+        <h3 class="student-name">{{ student.name }}</h3>
+        <p class="student-class">{{ student.class }}</p>
+        <p class="student-age">{{ student.age }} years old</p>
+      </div>
+    </div>
+  
+    <!-- Contact Details -->
+    <div class="contact-details">
+      <p><strong>Email:</strong> <a href="mailto:{{ student.email }}">{{ student.email }}</a></p>
+      <p><strong>Phone:</strong> {{ student.phone }}</p>
+      <p><strong>Address:</strong> {{ student.address }}</p>
+    </div>
+  
+    <!-- Hobbies Section -->
+    <div class="section">
+      <h4>Hobbies</h4>
+      <ul class="student-hobbies">
+        <li *ngFor="let hobby of student.hobbies">{{ hobby }}</li>
+      </ul>
+    </div>
+  
+    <!-- Skills Section -->
+    <div class="section">
+      <h4>Skills</h4>
+      <ul class="student-skills">
+        <li *ngFor="let skill of student.skills">{{ skill }}</li>
+      </ul>
+    </div>
+  
+    <!-- Quote Section -->
+    <div class="quote-section">
+      <blockquote>"{{ student.favoriteQuote }}"</blockquote>
+    </div>
+  
+    <!-- Action Buttons (Delete and Navigation) -->
+    <div class="student-actions">
+      <button class="delete-btn" (click)="deleteStudent()">Supprimer</button>
+      <app-student-navigator></app-student-navigator>
+    </div>
+  </div>

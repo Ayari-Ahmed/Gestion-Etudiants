@@ -1,0 +1,163 @@
+/* student.component.css */
+
+/* Overall card styling */
+.student-card {
+    margin-top: -10px;
+    background-color: #fff;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 900px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    
+  }
+  
+  /* Profile Section */
+  .profile-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-img-wrapper {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .student-profile-img {
+    height: 109px; /* Fixed height to make the image circular */
+    width: 110px;  /* Fixed width to maintain a perfect circle */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 5px;
+    margin-left: 3px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border: 2px solid #3498db; /* Border around the image */
+  }
+  
+  
+  .profile-info {
+    flex: 1;
+  }
+  
+  .student-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 0;
+  }
+  
+  .student-class {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin: 5px 0;
+  }
+  
+  .student-age {
+    font-size: 1.1rem;
+    color: #16a085;
+    margin: 0;
+  }
+  
+  /* Contact Details */
+  .contact-details {
+    margin: 20px 0;
+  }
+  
+  .contact-details p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin: 8px 0;
+  }
+  
+  .contact-details a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .contact-details a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Section Styling (Hobbies, Skills, etc.) */
+  .section {
+    margin-bottom: 30px;
+  }
+  
+  h4 {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-bottom: 15px;
+    font-weight: normal;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  li {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin: 5px 0;
+    list-style-type: disc;
+  }
+  
+  /* Quote Section */
+  .quote-section {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #34495e;
+    text-align: center;
+    margin: 0;
+  }
+  
+  /* Action Buttons */
+  .student-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  /* Delete Button */
+.delete-btn {
+    background-color: #e74c3c; /* Initial red color */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out; /* Smooth color transition and scaling effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adding shadow for better visual */
+    display: inline-block; /* Ensures button behaves like an inline block element */
+    text-align: center; /* Centers text inside button */
+  }
+  
+  /* Hover effect for the delete button */
+  .delete-btn:hover {
+    background-color: #c0392b; /* Darker red on hover */
+    transform: scale(1.05); /* Slight scaling effect to make the button feel interactive */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+  }
+  
+  

@@ -1,10 +1,139 @@
-<h3>Ajouter un Étudiant</h3>
-<form (ngSubmit)="addStudent()">
-<label>Nom:</label>
-<input [(ngModel)]="newStudent.name" name="name" required>
-<label>Âge:</label>
-<input type="number" [(ngModel)]="newStudent.age" name="age" required>
-<label>Classe:</label>
-<input [(ngModel)]="newStudent.class" name="class" required>
-<button type="submit">Ajouter</button>
-</form>
+<h3 class="add-student-title">Ajouter un Étudiant</h3>
+<div class="add-student-form-container">
+  <form (ngSubmit)="addStudent()" class="add-student-form">
+    <div class="form-row">
+      <div class="form-field">
+        <label for="name" class="form-label">Nom:</label>
+        <input 
+          id="name" 
+          type="text" 
+          [(ngModel)]="newStudent.name" 
+          name="name" 
+          required 
+          class="form-input" 
+          placeholder="Entrez le nom de l'étudiant" 
+        />
+      </div>
+
+      <div class="form-field">
+        <label for="age" class="form-label">Âge:</label>
+        <input 
+          id="age" 
+          type="number" 
+          [(ngModel)]="newStudent.age" 
+          name="age" 
+          required 
+          class="form-input" 
+          placeholder="Entrez l'âge de l'étudiant" 
+        />
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-field">
+        <label for="class" class="form-label">Classe:</label>
+        <input 
+          id="class" 
+          type="text" 
+          [(ngModel)]="newStudent.class" 
+          name="class" 
+          required 
+          class="form-input" 
+          placeholder="Entrez la classe" 
+        />
+      </div>
+
+      <div class="form-field">
+        <label for="email" class="form-label">Email:</label>
+        <input 
+          id="email" 
+          type="email" 
+          [(ngModel)]="newStudent.email" 
+          name="email" 
+          class="form-input" 
+          placeholder="Entrez l'email de l'étudiant" 
+        />
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-field">
+        <label for="phone" class="form-label">Téléphone:</label>
+        <input 
+          id="phone" 
+          type="text" 
+          [(ngModel)]="newStudent.phone" 
+          name="phone" 
+          class="form-input" 
+          placeholder="Entrez le téléphone de l'étudiant" 
+        />
+      </div>
+
+      <div class="form-field">
+        <label for="address" class="form-label">Adresse:</label>
+        <input 
+          id="address" 
+          type="text" 
+          [(ngModel)]="newStudent.address" 
+          name="address" 
+          class="form-input" 
+          placeholder="Entrez l'adresse de l'étudiant" 
+        />
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-field">
+        <label for="grade" class="form-label">Note:</label>
+        <input 
+          id="grade" 
+          type="text" 
+          [(ngModel)]="newStudent.grade" 
+          name="grade" 
+          class="form-input" 
+          placeholder="Entrez la note de l'étudiant" 
+        />
+      </div>
+
+      <div class="form-field">
+        <label for="hobbies" class="form-label">Hobbies:</label>
+        <input 
+          id="hobbies" 
+          type="text" 
+          [(ngModel)]="newStudent.hobbies" 
+          name="hobbies" 
+          class="form-input" 
+          placeholder="Entrez les hobbies séparés par des virgules" 
+        />
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-field">
+        <label for="skills" class="form-label">Compétences:</label>
+        <input 
+          id="skills" 
+          type="text" 
+          [(ngModel)]="newStudent.skills" 
+          name="skills" 
+          class="form-input" 
+          placeholder="Entrez les compétences séparées par des virgules" 
+        />
+      </div>
+
+      <div class="form-field">
+        <label for="favoriteQuote" class="form-label">Citation préférée:</label>
+        <input 
+          id="favoriteQuote" 
+          type="text" 
+          [(ngModel)]="newStudent.favoriteQuote" 
+          name="favoriteQuote" 
+          class="form-input" 
+          placeholder="Entrez la citation préférée de l'étudiant" 
+        />
+      </div>
+    </div>
+
+    <button type="submit" class="add-btn">Ajouter l'étudiant</button>
+  </form>
+</div>
