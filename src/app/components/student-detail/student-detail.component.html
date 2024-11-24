@@ -1,0 +1,7 @@
+<div *ngIf="student">
+  <h3>{{ student.name }}</h3>
+  <p>Age: {{ student.age }}</p>
+  <p>Classe: {{ student.class }}</p>
+  <button (click)="deleteStudent()">Supprimer</button>
+  <app-student-navigator></app-student-navigator>
+</div>
